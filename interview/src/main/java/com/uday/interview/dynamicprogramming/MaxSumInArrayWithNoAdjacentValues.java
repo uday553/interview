@@ -27,6 +27,7 @@ public class MaxSumInArrayWithNoAdjacentValues
 			return result[array.length-1];
 		}
 	}
+	
     public static void main( String[] args )
     {
     	MaxSumInArrayWithNoAdjacentValues msa = new MaxSumInArrayWithNoAdjacentValues();

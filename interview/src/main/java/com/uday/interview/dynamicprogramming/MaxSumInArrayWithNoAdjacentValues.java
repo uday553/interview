@@ -23,7 +23,6 @@ public class MaxSumInArrayWithNoAdjacentValues
 			{
 				result[i] = Math.max(result[i-1], result[i-2]+array[i]);
 			}
-			System.out.println(result[array.length-1]);
 			return result[array.length-1];
 		}
 	}

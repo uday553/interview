@@ -1,11 +1,10 @@
 package com.uday.interview.graphs;
 
-import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.HashMap;
 import java.util.HashSet;
-import java.util.List;
+import java.util.LinkedList;
 import java.util.Map;
+import java.util.Queue;
 import java.util.Set;
 
 public class Graph<T,E> {
@@ -62,7 +61,18 @@ public class Graph<T,E> {
 			graph.remove(vertex);
 		}
 	}
-	
+	public double findShortestDistance(T source,T destination, Graph g)
+	{
+		Map<T,Integer> distance = new HashMap<T,Integer>();
+		Set<T> computedVertices = new HashSet<T>();
+		Queue<T> vertices = new LinkedList<T>();
+		while(computedVertices.size()<=g.graph.size())
+		{
+			
+		}
+		
+		return Double.MAX_VALUE;
+	}
 	public static void main(String args[])
 	{
 		Graph g = new Graph<Character, Integer>(false);

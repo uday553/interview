@@ -47,7 +47,6 @@ public class SubArraySort {
 		if(i==a.length-1) {
 			return a[i-1]>a[a.length-1];
 		} 
-
 		return a[i]>a[i+1] || a[i]<a[i-1];
 	}
 

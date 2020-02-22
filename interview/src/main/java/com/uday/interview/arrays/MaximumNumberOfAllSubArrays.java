@@ -3,7 +3,7 @@ package com.uday.interview.arrays;
 import java.util.Deque;
 import java.util.LinkedList;
 
-public class MaximumOfAllSubArrays {
+public class MaximumNumberOfAllSubArrays {
 
 	public static void peekElementsInSubArray(int arr[], int k)
 	{

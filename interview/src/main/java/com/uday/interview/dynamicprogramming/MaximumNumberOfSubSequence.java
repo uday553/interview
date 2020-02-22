@@ -1,4 +1,4 @@
-package com.uday.interview.arrays;
+package com.uday.interview.dynamicprogramming;
 
 import java.util.Arrays;
 

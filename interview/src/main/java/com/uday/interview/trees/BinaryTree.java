@@ -5,24 +5,24 @@ import java.util.Queue;
 import java.util.Stack;
 
 public class BinaryTree {
-	Node root = null;
+	TreeNode root = null;
 
 	public void add(int value)
 	{
 		if(root==null)
 		{
-			root = new Node(value);
+			root = new TreeNode(value);
 			return;
 		}
 
-		Node current = root;
+		TreeNode current = root;
 		while(true)
 		{
 			if(current.value>value)
 			{
 				if(current.left==null)
 				{
-					current.left= new Node(value);
+					current.left= new TreeNode(value);
 					break;
 				}
 				else {
@@ -33,7 +33,7 @@ public class BinaryTree {
 			{
 				if(current.right==null)
 				{
-					current.right= new Node(value);
+					current.right= new TreeNode(value);
 					break;
 				}
 				else {
@@ -49,8 +49,8 @@ public class BinaryTree {
 			System.out.println("Empty Tree");
 			return;
 		}
-		Node current = root;
-		Stack<Node> stack = new Stack<Node>();
+		TreeNode current = root;
+		Stack<TreeNode> stack = new Stack<TreeNode>();
 		while(current!=null)
 		{
 			if(current.left!=null)
@@ -74,8 +74,8 @@ public class BinaryTree {
 			System.out.println("Empty Tree");
 			return;
 		}
-		Queue<Node> queue = new LinkedList<Node>();
-		Node current = root;
+		Queue<TreeNode> queue = new LinkedList<TreeNode>();
+		TreeNode current = root;
 		while(current!=null)
 		{
 			if(current.left!=null)
@@ -102,7 +102,7 @@ public class BinaryTree {
 	{
 		printTreePostOrder(root);
 	}
-	public void printTreePostOrder(Node current)
+	public void printTreePostOrder(TreeNode current)
 	{
 		if(current!=null)
 		{
@@ -117,7 +117,7 @@ public class BinaryTree {
 			System.out.println("-> "+current.value);
 		}
 	}
-	public void printTreeInOrder(Node current)
+	public void printTreeInOrder(TreeNode current)
 	{
 		if(current!=null)
 		{
@@ -132,7 +132,7 @@ public class BinaryTree {
 			}
 		}
 	}
-	public void printTreePreOrder(Node current)
+	public void printTreePreOrder(TreeNode current)
 	{
 		if(current!=null)
 		{
@@ -176,21 +176,21 @@ public class BinaryTree {
 		pbt.printBoundaries(bt.root);
 		
 		BinaryTree bt1 = new  BinaryTree();
-		bt1.root=new Node(5);
-		bt1.root.left=new Node(1);
-		bt1.root.right=new Node(1);
-		bt1.root.left.left=new Node(1);
-		bt1.root.left.right=new Node(1);
-		bt1.root.right.left=new Node(1);
-		bt1.root.right.right=new Node(1);
-		bt1.root.left.left.left=new Node(1);
-		bt1.root.left.left.right=new Node(1);
-		bt1.root.left.right.left=new Node(1);
-		bt1.root.left.right.right=new Node(1);
-		bt1.root.right.left.left=new Node(1);
-		bt1.root.right.left.right=new Node(1);
-		bt1.root.right.right.left=new Node(1);
-		bt1.root.right.right.right=new Node(1);
+		bt1.root=new TreeNode(5);
+		bt1.root.left=new TreeNode(1);
+		bt1.root.right=new TreeNode(1);
+		bt1.root.left.left=new TreeNode(1);
+		bt1.root.left.right=new TreeNode(1);
+		bt1.root.right.left=new TreeNode(1);
+		bt1.root.right.right=new TreeNode(1);
+		bt1.root.left.left.left=new TreeNode(1);
+		bt1.root.left.left.right=new TreeNode(1);
+		bt1.root.left.right.left=new TreeNode(1);
+		bt1.root.left.right.right=new TreeNode(1);
+		bt1.root.right.left.left=new TreeNode(1);
+		bt1.root.right.left.right=new TreeNode(1);
+		bt1.root.right.right.left=new TreeNode(1);
+		bt1.root.right.right.right=new TreeNode(1);
 		
 		
 		PrintMaxSumLevelOfTree pmsl = new PrintMaxSumLevelOfTree();

@@ -1,10 +1,10 @@
 package com.uday.interview.trees;
 
-public class Node {
+public class TreeNode {
 	int value;
-	Node left;
-	Node right;
-	Node(int value)
+	TreeNode left;
+	TreeNode right;
+	TreeNode(int value)
 	{
 		this.value=value;
 		left=null;
